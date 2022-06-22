@@ -56,6 +56,7 @@
               </td>
               <td>
                 <v-btn 
+                  v-if="application.email_sent"
                   x-small
                   class="ma-1"
                   :loading="isLoading"
@@ -66,6 +67,7 @@
                   <v-icon dark>mdi-close</v-icon>
                 </v-btn>
                 <v-btn 
+                  v-if="application.email_sent"
                   x-small
                   class="ma-1"
                   :loading="isLoading"
